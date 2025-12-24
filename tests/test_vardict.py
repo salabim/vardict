@@ -5,7 +5,7 @@ if __name__ == "__main__":  # to make the tests run without the pytest cli
     os.chdir(os.path.dirname(__file__))
     sys.path.insert(0, os.path.dirname(__file__) + "/../")
 
-from vardict import vardict
+import vardict
 
 def test_normal():
     one = 1
