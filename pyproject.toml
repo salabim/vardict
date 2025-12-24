@@ -8,7 +8,7 @@ authors = [
     {name = "Ruud van der Ham", email = "rt.van.der.ham@gmail.com"}
 ]
 description = "vardict - dict with variables"
-version = "1.0.0-1"
+version = "1.0.2-0"
 readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [

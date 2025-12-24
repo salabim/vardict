@@ -1,6 +1,8 @@
 ## changelog of vardict
 
-#### version 1.0.0 | 2025-12-24
+For the full documentation, see www.salabim.org/vardict .
 
-Initial version
+#### version 1.0.2 | 2025-12-24
+
+Initial version, published on PyPI and GitHub.
 

@@ -18,5 +18,19 @@ def test_normal():
     assert vardict(numbers12, numbers3) == {"numbers12": {"one": 1, "two": 2}, "numbers3": {"three": 3}}
     assert vardict(three=3) == {"three": 3}
 
+def test_errors():
+    one = 1
+    two = 2
+
+    with pytest.raises(NameError):
+        vardict(four, two, three=3)
+    with pytest.raises(ValueError):
+        vardict(one+two, three=3)
+    with pytest.raises(ValueError):
+        vardict("1", three=3)
+    with pytest.raises(ValueError):
+        vardict(one, two, one=1, three=3)
+
+
 if __name__ == "__main__":
     pytest.main(["-vv", "-s", "-x", __file__])

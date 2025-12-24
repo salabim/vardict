@@ -1,7 +1,9 @@
 import inspect
 import executing
+import types
+import sys
 
-__version__ = "1.0.0"
+__version__ = "1.0.2"
 
 class vardict(dict):
     def __new__(cls, *args, **kwargs):
@@ -22,13 +24,3 @@ class vardict(dict):
             result[left] = right
         return result | kwargs
 
-if __name__ == "__main__":
-    one = 1
-    two = 2
-    numbers12 = {"one": 1, "two": 2}
-    numbers3 = {"three": 3}
-
-    assert vardict(one, two, three=3) == {"one": 1, "two": 2, "three": 3}
-    assert vardict(numbers12, three=3) == {"numbers12": {"one": 1, "two": 2}, "three": 3}
-    assert vardict(numbers12, numbers3) == {"numbers12": {"one": 1, "two": 2}, "numbers3": {"three": 3}}
-    assert vardict(three=3) == {"three": 3}
