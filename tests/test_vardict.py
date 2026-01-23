@@ -13,6 +13,7 @@ def test_normal():
     numbers12 = {"one": 1, "two": 2}
     numbers3 = {"three": 3}
 
+    assert vardict(one) == {"one": 1}
     assert vardict(one, two, three=3) == {"one": 1, "two": 2, "three": 3}
     assert vardict(numbers12, three=3) == {"numbers12": {"one": 1, "two": 2}, "three": 3}
     assert vardict(numbers12, numbers3) == {"numbers12": {"one": 1, "two": 2}, "numbers3": {"three": 3}}
