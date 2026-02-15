@@ -6,7 +6,7 @@ For the changelog, see www.salabim.org/vardict/changelog .
 
 ### Introduction
 
-With vardict, it is possible to build up a dicionnary based on variable names and their value.
+With vardict, it is possible to build up a dictionary based on variable names and their value.
 For instance,
 ```
 first_name = "John"
