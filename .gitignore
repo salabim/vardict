@@ -8,4 +8,5 @@ build_and_upload.bat
 toml_versioner.py
 upload_html.py
 misc
+artwork
 *.html

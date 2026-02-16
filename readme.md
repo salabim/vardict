@@ -1,4 +1,4 @@
-# vardict
+ <img src="https://www.salabim.org/vardict/vardict_logo.png">
 
 ### Changelog
 
@@ -8,6 +8,7 @@ For the changelog, see www.salabim.org/vardict/changelog .
 
 With vardict, it is possible to build up a dictionary based on variable names and their value.
 For instance,
+
 ```
 first_name = "John"
 last_name = "Smith"
